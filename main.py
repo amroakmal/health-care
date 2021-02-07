@@ -84,3 +84,7 @@ def getUserData(dict):
     prop_covid = covid_cnt / COVID_SYMP_COUNT
     prop_strok = stroke_cnt / STROKE_SYMP_COUNT
     prop_heart_attack = heart_attack_cnt / HEART_ATTACK_SYMP_COUNT
+
+    diseases_prop = [prop_covid, prop_heart_attack, prop_strok]
+    diseases_prop.sort(reverse=True)
+    return diseases_prop
